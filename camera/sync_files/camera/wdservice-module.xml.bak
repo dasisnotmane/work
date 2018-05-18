@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Config>
+  <Sent-Folder-size type="number" range="1..500" label="{{Maximum uploaded zip files stored in sent directory}}" access="s">400</Sent-Folder-size>
+  <Sent-Folder-path type="text" label="{{Folder to store zip files}}" access="s">/home/root/tickets</Sent-Folder-path>
+  <WD-upload_url type="text" label="{{URL for upload Zip files to WD}}" access="s">http://tcam.bdlogix.com/tcam/server/data</WD-upload_url>
+  <WD-alarm_url type="text" label="{{URL for camera alarms reported to WD}}" access="s">http://tcam.bdlogix.com/tcam/server/setconfig</WD-alarm_url>
+  <WD-event_url type="text" label="{{URL for camera events reported to WD}}" access="s">http://tcam.bdlogix.com/tcam/server/event</WD-event_url>
+  <WD-event_period type="number" range="60..6000" label="{{Send events period to WD server in seconds}}" access="s">300</WD-event_period>
+  <WD-calibration_url type="text" label="{{URL for camera calibration data reported to WD}}" access="s">http://tcam.bdlogix.com/tcam/server/calibration</WD-calibration_url>
+  <Always-Connect type="boolean" label="{{Hold permanent 3G modem connection}}" access="s">true</Always-Connect>
+  <Upload-ZIP-Files type="boolean" label="{{Upload ZIP files to WD server}}" access="s">true</Upload-ZIP-Files>
+  <Upload-Async type="boolean" label="{{Upload files asynchronous}}" access="s">true</Upload-Async>
+  <Open-Revers-SSH type="boolean" label="{{Enable ssh/web connection from outside server}}" access="s">true</Open-Revers-SSH>
+  <Server-Base-Port type="number" range="1..64000" label="{{Base port for remote server (Open-Revers-SSH should be active)}}" access="s">30000</Server-Base-Port>
+  <Server-URI type="text" label="{{Remote server uri (Open-Revers-SSH should be active)}}" access="s">ftpadmin@68.71.35.244</Server-URI>
+  <Enable-3G-Route type="boolean" label="{{Enable Internet connection via 3G modem}}" access="s">true</Enable-3G-Route>
+  <GSM_Modem_SWReset type="boolean" label="{{GSM modem exist}}" access="f">true</GSM_Modem_SWReset>
+</Config>

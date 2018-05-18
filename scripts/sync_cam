@@ -1,0 +1,17 @@
+# this script is used to copy over the files from the camera into
+# our local folder 
+
+#!/bin/bash
+#rsync -avzhe ssh root@10.0.0.1:/etc/camera /etc/hostapd.conf /mnt/c/work/camera/sync_files/ 
+
+
+
+### DRY RUN 
+#rsync -nrv --include="/etc/" --include="hostapd.conf" --include="/etc/camera/" root@10.0.0.1:/etc/camera /mnt/c/work/camera/sync_files/ 
+
+#non dry run 
+#rsync -avzn --include=*/ --include="/etc/" --include="hostapd.conf" --include="/etc/camera/" --exclude=*  root@10.0.0.1:/etc /mnt/c/work/camera/sync_files/ 
+
+
+#rsync -avzn --list-only --include '/etc/' --include '/etc/camera/***' --include="hostapd.conf"  --exclude '*' -e ssh root@10.0.0.1:/etc /mnt/c/work/camera/sync_files/
+rsync -avz --include '/etc/' --include '/etc/camera/***' --include="hostapd.conf"  --exclude '*' -e ssh root@10.0.0.1:/etc /mnt/c/work/camera/sync_files/

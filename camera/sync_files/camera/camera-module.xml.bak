@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+  <SourceName type="text" label="{{Source name}}" access="f">/dev/video0</SourceName>
+  <SecondarySourceName type="text" label="{{Secondary source name}}" access="f">/dev/video1</SecondarySourceName>
+  <StreamPort type="number" range="1..65535" label="{{Stream port}}" access="s">8554</StreamPort>
+  <StreamName type="text" label="{{Stream name}}" access="s">h264.live</StreamName>
+  <StreamBitrate type="number" range="1000..32000" label="{{Stream bitrate}}" access="s">14000</StreamBitrate>
+  <OutputResolution type="list" options="NoResize|360p|480p|720p" label="{{Output resolution}}" access="s">NoResize</OutputResolution>
+  <OutputFPS type="number" range="0..15" label="{{OutputFPS}}" access="f">0</OutputFPS>
+  <GrayScale type="boolean" label="{{Grayscale}}" access="s">false</GrayScale>
+  <ArchiveSize type="number" range="50..160" label="{{Number of frames in archive}}" access="f">120</ArchiveSize>
+  <JPEGQuality type="number" range="50..90" label="{{JPEG quality}}" access="f">60</JPEGQuality>
+  <CameraFormat type="list" options="video/x-raw|image/jpeg|video/x-bayer" label="{{Format}}" access="f">video/x-bayer</CameraFormat>
+  <CameraWidth type="number" range="320..1920" label="{{Image width (px)}}" access="f">1280</CameraWidth>
+  <CameraHeight type="number" range="200..1080" label="{{Image height (px)}}" access="f">720</CameraHeight>
+  <CameraRate type="number" range="5..60" label="{{Frame rate}}" access="f">5</CameraRate>
+  <FocalLength type="number" range="2..50" label="{{Focal length (mm)}}" access="f">12.6</FocalLength>
+  <SensorWidth type="number" range="1..10" label="{{Sensor width (mm)}}" access="f">4.23</SensorWidth>
+  <SensorHeight type="number" range="1..10" label="{{Sensor height (mm)}}" access="f">2.38</SensorHeight>
+  <MaxResolutionWidth type="number" range="320..1920" label="{{Camera sensor max. width (px)}}" access="f">1920</MaxResolutionWidth>
+  <MaxResolutionHeight type="number" range="200..1080" label="{{Camera sensor max. height (px)}}" access="f">1080</MaxResolutionHeight>
+  <ResizeMethodIsScale type="boolean" label="{{Scale to change resolution (crop otherwise)}}" access="f">true</ResizeMethodIsScale>
+  <XOffset type="number" range="-100..100" label="{{X-offset of camera frame (pixels)}}" access="f">0</XOffset>
+  <YOffset type="number" range="-100..100" label="{{Y-offset of camera frame (pixels)}}" access="f">0</YOffset>
+  <TextTimeStamp type="boolean" label="{{Show timestamp on frame in text mode instead of QR-code}}" access="f">0</TextTimeStamp>
+  <CR type="number" range="0.1..10.0" label="{{Color correction coefficient for bayer camera (Red)}}" access="f">1.5</CR>
+  <CG type="number" range="0.1..10.0" label="{{Color correction coefficient for bayer camera (Green)}}" access="f">1.0</CG>
+  <CB type="number" range="0.1..10.0" label="{{Color correction coefficient for bayer camera (Blue)}}" access="f">1.43</CB>
+  <NCR type="number" range="0.1..10.0" label="{{Color correction coefficient for bayer camera night (Red)}}" access="f">1.0</NCR>
+  <NCG type="number" range="0.1..10.0" label="{{Color correction coefficient for bayer camera night (Green)}}" access="f">1.0</NCG>
+  <NCB type="number" range="0.1..10.0" label="{{Color correction coefficient for bayer camera night (Blue)}}" access="f">1.0</NCB>
+  <LowBrightnessLimit type="number" range="50..200" label="{{Minimum Brightness for auto correction}}" access="f">72</LowBrightnessLimit>
+  <HighBrightnessLimit type="number" range="50..200" label="{{Maximum Brightness for auto correction}}" access="f">113</HighBrightnessLimit>
+  <StdDeviationLimit type="number" range="10..50" label="{{Maximum StdDeviation for auto correction}}" access="f">32.0</StdDeviationLimit>
+  <ContrastLimit type="number" range="1..5" label="{{Maximum Contrast for auto correction}}" access="s">1.0</ContrastLimit>
+  <GainLimit type="number" range="0..28" label="{{Maximum Digital Gain amplifier}}" access="s">1</GainLimit>
+  <ExposureLimit type="number" range="500..10000" label="{{Maximum Exposure for image sensor}}" access="s">1538</ExposureLimit>
+  <TargetCorrectionInterval type="number" range="0..300" label="{{WB ballance correction interval (sec)}}" access="f">8</TargetCorrectionInterval>
+</Config>

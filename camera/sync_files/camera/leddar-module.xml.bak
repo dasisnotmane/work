@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Config>
+  <LeddarModel type="list" options="M16_24|M16_18" label="{{Leddar model}}" access="f">M16_24</LeddarModel>
+  <Accumulations type="number" range="0..10" label="{{The power of 2 of the number of accumulations to perform.&lt;br /&gt;&lt;small&gt;The number of accumulations can only take values that are a power of two. This property can have a value between 0 and 10 giving a number of accumulations of 1, 2, 4, 8, 16, 32, 64, 128, 256, 512 or 1024. Higher values enhance range, reduce measurement rate and noise.&lt;/small&gt;}}" access="f">7</Accumulations>
+  <Oversampling type="number" range="0..3" label="{{The power of 2 of the number of oversamplings to perform between base samples.&lt;br /&gt;&lt;small&gt;Oversampling can only take values that are a power of two. This property can have a value between 0 and 3, giving oversampling of 1, 2, 4 and 8. Higher values enhance accuracy/precision/resolution and reduce measurement rate.&lt;/small&gt;}}" access="f">2</Oversampling>
+  <PointCount type="number" range="10..64" label="{{The number of base sample points acquired by the sensor}}" access="f">25</PointCount>
+  <ThresholdOffset type="number" range="-2..2" label="{{An offset to increase the detection threshold}}" access="f">0.5</ThresholdOffset>
+  <AutoLEDIntensity type="number" range="0..1" label="{{Automatic LED intensity control}}" access="f">0</AutoLEDIntensity>
+  <TargetDistanceDelta type="number" range="0..5" label="{{Maximal difference between distance to target in two samplings (m)}}" access="f">2.0</TargetDistanceDelta>
+  <SegmentDistanceDelta type="number" range="0..5" label="{{Maximal difference between distance to target in two neighbor segments (m)}}" access="f">2.5</SegmentDistanceDelta>
+  <Direction type="number" range="-1..1" label="{{Direction.&lt;br /&gt;&lt;small&gt;-1 - incoming, 1 - outgoing, 0 - both.&lt;/small&gt;}}" access="f">1</Direction>
+  <SegmentShift type="number" range="0..5" label="{{Maximal target shift in segments between two samplings}}" access="f">2</SegmentShift>
+  <MinSegments type="number" range="0..5" label="{{Minimal number of segments per target}}" access="f">2</MinSegments>
+  <MinAmplitude type="number" range="0..5" label="{{Minimal signal amplitude in segment}}" access="f">1</MinAmplitude>
+  <MinDistance type="number" range="2..30" label="{{Minimal allowed distance of leddar measurement}}" access="f">10</MinDistance>
+  <SuccessfulSamples type="number" range="0..5" label="{{Number of successful samples for target detection}}" access="f">3</SuccessfulSamples>
+  <MissedSamples type="number" range="1..6" label="{{Number of missed samples for target removal}}" access="s">5</MissedSamples>
+  <SpeedDeviation type="number" range="0..500" label="{{Maximum allowed momentary speed deviation from average speed (%)}}" access="s">400</SpeedDeviation>
+  <MinTrackedDistance type="number" range="2..30" label="{{Minimal tracked distance for violation ticket (m)}}" access="s">6</MinTrackedDistance>
+  <LeddarInterface type="list" options="USB|Serial|Test" label="{{Leddar interface type}}" access="f">USB</LeddarInterface>
+</Config>

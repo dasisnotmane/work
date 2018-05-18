@@ -1,0 +1,16 @@
+<Config>
+	<QueryInterval label="{{Query interval (s):}}" range="1..60" type="number">2</QueryInterval>
+	<InvalidationInterval label="{{Ticket invalidation inteval (s):}}" range="2..300" type="number">10</InvalidationInterval>
+	<MaxNumImages label="{{Maximum number of images to show}}" range="1..5" type="number">4</MaxNumImages>
+	<TicketsDir access="s" label="{{New tickets folder}}">/home/root/tickets</TicketsDir>
+	<ImgDir access="s" label="{{Last image folder}}">/home/root/tickets/img</ImgDir>
+	<HoldDir access="s" label="{{Hold images folder}}">/home/root/tickets/hold</HoldDir>
+	<IssuedDir access="s" label="{{Issued tickets folder}}">/home/root/tickets/issued</IssuedDir>
+	<LogsDir access="s" label="{{Log files folder}}">/home/root/tickets/logs</LogsDir>
+	<WitnessedDir access="s" label="{{Witnessed tickets folder}}">/home/root/tickets/witnessed</WitnessedDir>
+	<Custom1 access="s" hint="{{Clear the field to hide it}}" label="{{Custom ticket field}} 1"/>
+	<Custom2 access="s" hint="{{Clear the field to hide it}}" label="{{Custom ticket field}} 2"/>
+	<Custom3 access="s" hint="{{Clear the field to hide it}}" label="{{Custom ticket field}} 3"/>
+	<Custom4 access="s" hint="{{Clear the field to hide it}}" label="{{Custom ticket field}} 4"/>
+	<Custom5 access="s" hint="{{Clear the field to hide it}}" label="{{Custom ticket field}} 5"/>
+</Config>

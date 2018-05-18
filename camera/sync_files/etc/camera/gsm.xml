@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Config>
+  <ppp_serial_device label="{{Serial device}}" access="f">ttyUSB0</ppp_serial_device>
+  <gsm_apn_provider label="{{APN provider}}" access="s">LTEMOBILE.APN,Pda.bell.ca</gsm_apn_provider>
+  <ETH-mode type="list" options="DHCP|Static IP" label="{{Ethernet connection mode}}" access="s" disable="DHCP:ETH-ipaddress,ETH-mask,ETH-gateway,ETH-dns1,ETH-dns2">DHCP</ETH-mode>
+  <ETH-ipaddress label="{{IP Address}}" access="s">0.0.0.0</ETH-ipaddress>
+  <ETH-mask label="{{IP Network Mask}}" access="s">0.0.0.0</ETH-mask>
+  <ETH-gateway label="{{Default Gateway}}" access="s">0.0.0.0</ETH-gateway>
+  <ETH-dns1 label="{{DNS Server (primary)}}" access="s">0.0.0.0</ETH-dns1>
+  <ETH-dns2 label="{{DNS Server (secondary)}}" access="s">0.0.0.0</ETH-dns2>
+  <PPP-Backup app="spcam500" type="boolean" label="{{Use GSM connection as backup only}}" access="s">false</PPP-Backup>
+  <PPP-Backup-Restore-Timeout app="spcam500" type="number" range="10..480" label="{{In case of failure, try to restore Ethernet connection each (in minutes)}}" access="s">60</PPP-Backup-Restore-Timeout>
+</Config>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Config>
+  <Time-Zone-offset app="spcam500" type="list" sort="1" exec="find  /usr/share/zoneinfo/ -type f | sed -r 's/\/usr\/share\/zoneinfo\///' | tr '\n' '|'" label="{{Time zone offset by location}}" access="s">America/New_York</Time-Zone-offset>
+  <LocationName type="text" label="{{Location}}" access="u">Upton street</LocationName>
+  <OfficialSpeedLimit type="number" units="ms" range="0..42" label="{{Official speed limit}}" access="u">20</OfficialSpeedLimit>
+  <OfficialSpeedLimitSmall type="number" units="ms" range="0..42" label="{{Official speed limit for a small vehicle}}" access="s">0</OfficialSpeedLimitSmall>
+  <OfficialSpeedLimitAverage type="number" units="ms" range="0..42" label="{{Official speed limit for an average sized vehicle}}" access="s">0</OfficialSpeedLimitAverage>
+  <OfficialSpeedLimitBig type="number" units="ms" range="0..42" label="{{Official speed limit for a big vehicle}}" access="s">0</OfficialSpeedLimitBig>
+  <TriggerSpeedLimit type="number" units="ms" range="0..42" label="{{Violation speed - the limit which triggers recording of speed violation}}" access="u">25</TriggerSpeedLimit>
+  <TriggerSpeedLimitSmall type="number" units="ms" range="0..42" label="{{Violation speed for a small vehicle - the limit which triggers recording of speed violation}}" access="s">0</TriggerSpeedLimitSmall>
+  <TriggerSpeedLimitAverage type="number" units="ms" range="0..42" label="{{Violation speed for an average sized vehicle - the limit which triggers recording of speed violation}}" access="s">0</TriggerSpeedLimitAverage>
+  <TriggerSpeedLimitBig type="number" units="ms" range="0..42" label="{{Violation speed for a big vehicle - the limit which triggers recording of speed violation}}" access="s">0</TriggerSpeedLimitBig>
+  <LeftSideInstallation type="boolean" label="{{Is it left side installation}}" access="s">false</LeftSideInstallation>
+  <LaneWidth type="number" units="m" label="{{Road lane width}}" range="2..5" access="s">3.7</LaneWidth>
+  <DeviceMountingHeight type="number" units="m" range="2..4" label="{{Device mounting height}}" access="s">3</DeviceMountingHeight>
+  <RoadEdgeDistance type="number" units="m" label="{{Distance from device to road edge}}" range="1..6" access="s">1.5</RoadEdgeDistance>
+  <RoadEdgeMarkerDistance type="number" units="m" label="{{Distance to marker of road edge}}" range="15..30" access="s">25</RoadEdgeMarkerDistance>
+  <FullFramesPerEvent type="number" label="{{Full frames per event}}" range="0..5" access="u">2</FullFramesPerEvent>
+  <CutFramesPerEvent type="number" label="{{Cut frames per event}}" range="0..5" access="u">5</CutFramesPerEvent>
+  <FramesDistanceStep type="number" units="m" label="{{Distance between frames}}" range="0.5..10" access="u">2</FramesDistanceStep>
+  <ShowAim type="boolean" label="{{Showing center frame AIM}}" access="f">false</ShowAim>
+  <ShowGrid type="boolean" label="{{Showing grid segments}}" access="f">true</ShowGrid>
+  <ShowInstallationAim type="boolean" label="{{Showing installation AIM}}" access="f">true</ShowInstallationAim>
+  <SyncIlluminatorsWithSensor type="boolean" label="{{Syncronize illuminators with image sensor}}" access="f">false</SyncIlluminatorsWithSensor>
+  <TempDir type="text" label="{{Temporary directory to store images}}" access="f">/tmp</TempDir>
+  <LogArchiveTimestamps type="boolean" label="{{Append timestamp to the name of archived log files}}" access="f">false</LogArchiveTimestamps>
+  <LogArchiveCompress type="boolean" label="{{Compress log files using GZip}}" access="f">true</LogArchiveCompress>
+  <LogArchivePurgeCount type="number" range="0..100" label="{{Maximum number of archived log files (0 - unlimited)}}" access="f">5</LogArchivePurgeCount>
+  <TCPTimeout type="number" range="0..10000" label="{{TCP connection timeout (msec)}}" access="f">2000</TCPTimeout>
+  <IP-camera-module type="text" label="{{IP of camera module}}" access="f">127.0.0.1</IP-camera-module>
+  <IP-leddar-module type="text" label="{{IP of leddar module}}" access="f">127.0.0.1</IP-leddar-module>
+  <IP-wdservice-module type="text" label="{{IP of wdservice module}}" access="f">127.0.0.1</IP-wdservice-module>
+  <IP-lowcost-camera type="text" label="{{IP of lowcost camera}}" access="f">127.0.0.1</IP-lowcost-camera>
+  <IP-sign-ctrl type="text" label="{{IP of sign-ctrl module}}" access="f">127.0.0.1</IP-sign-ctrl>
+  <Port-camera-module type="number" range="1..65535" label="{{Port of camera module}}" access="f">49001</Port-camera-module>
+  <Port-leddar-module type="number" range="1..65535" label="{{Port of leddar module}}" access="f">49002</Port-leddar-module>
+  <Port-wdservice-module type="number" range="1..65535" label="{{Port of wdservice module}}" access="f">49003</Port-wdservice-module>
+  <Port-lowcost-camera type="number" range="1..65535" label="{{Port of lowcost module}}" access="f">49004</Port-lowcost-camera>
+  <Port-sign-ctrl type="number" range="1..65535" label="{{Port of sign-ctrl module}}" access="f">49005</Port-sign-ctrl>
+  <ShowBeams app="speedtrap" type="boolean" label="{{Show beams frame on photos}}" access="u">true</ShowBeams>
+  <ShowGPS app="speedtrap" type="boolean" label="{{Show GPS coordinates on photos}}" access="u">true</ShowGPS>
+  <LastSpeedCalcMethod type="boolean" label="{{Use vertical-line algorithm for high speed calculation}}" access="f">true</LastSpeedCalcMethod>
+  <TicketExpirationPeriod type="number" range="1..365" label="{{Expiration period for pending tickets (days)}}" access="s">30</TicketExpirationPeriod>
+</Config>

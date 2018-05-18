@@ -1,0 +1,13 @@
+#!/usr/bin/python
+
+#create a list of regex for all of the files 
+
+#sub the local files using the regex 
+
+# optional but useful do a comparison 
+#between the two xml files and make sure only the ones 
+# we expect to be different are changed
+
+#then run a rsynch of the local files to the remote camera
+
+

@@ -1,0 +1,14 @@
+<Config>
+	<WebMode>LCCam</WebMode>
+	<ShowFactorySettings>true</ShowFactorySettings>
+	<EnforcerMobileVisible>false</EnforcerMobileVisible>
+	<EnforcerMobileEnabled>false</EnforcerMobileEnabled>
+	<Users>
+		<User>
+			<Name>Administrator</Name>
+			<Login>admin</Login>
+			<Password>54539324ca4bc789452f45ca010c5f08</Password>
+			<AccessLevel>2</AccessLevel>
+		</User>
+	</Users>
+</Config>

@@ -1,0 +1,15 @@
+#description
+# this script is used to ssh into the cameras
+# but sinc the cameras use all the same ip but are form different devices
+# ssh will give us a warning the host has changed for this ip 
+# therefore we will delete the entry from the list of known hosts 
+# before we connect to the camera using ssh 
+
+
+
+#!/bin/bash
+
+echo $1 $2
+ssh-keygen -f /root/.ssh/known_hosts -R 10.0.0.1
+ssh $1@$2
+echo "yes"
